@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Página inicial de Leandro Moura para o curso WDD 231 - Desenvolvimento Frontend para Web I.">
+
+  <meta name="author" content="José Leandro da Silva Moura">
+
+  <title>WDD 231 | Leandro Moura</title>
+
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/base.css">
+  <link rel="stylesheet" href="estilos/maior.css">
+
+  <script src="scripts/navegacao.js" defer></script>
+  <script src="scripts/data.js" defer></script>
+  <script src="scripts/cursos.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+
+    <img
+      src="imagens/logo.png"
+      alt="Logotipo de Leandro Moura"
+      width="40"
+      height="40">
+
+    <span>Leandro Moura</span>
+
+    <button
+      id="botao-de-nav"
+      class="hamburger"
+      type="button"
+      aria-label="Abrir menu de navegação">
+    </button>
+
+  </header>
+
+
+  <nav id="barra-navegacao" class="navegacao">
+
+    <ul>
+
+      <li class="atual">
+        <a href="index.html">Início</a>
+      </li>
+
+      <li>
+        <a href="#">Câmara</a>
+      </li>
+
+      <li>
+        <a
+          href="https://github.com/jubileujandira"
+          target="_blank"
+          rel="noopener">
+          GitHub
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+  <main>
+
+    <h1>Início</h1>
+
+
+    <section class="sobre">
+
+      <h2>Sobre Mim</h2>
+
+      <p>
+        Meu nome é Leandro Moura. Esta página foi desenvolvida
+        como parte do curso WDD 231 - Desenvolvimento Frontend
+        para Web I.
+      </p>
+
+    </section>
+
+
+    <section class="foto">
+
+      <h2>Estudante</h2>
+
+      <img
+        src="imagens/perfil.webp"
+        alt="Foto de Leandro Moura"
+        width="300"
+        height="300"
+        loading="lazy">
+
+    </section>
+
+
+    <section class="certificado">
+
+      <h2>Cursos do Certificado</h2>
+
+
+      <div class="filtros">
+
+        <button id="todos" type="button">
+          Todos
+        </button>
+
+        <button id="cse" type="button">
+          CSE
+        </button>
+
+        <button id="wdd" type="button">
+          WDD
+        </button>
+
+      </div>
+
+
+      <div id="lista-cursos"></div>
+
+
+      <p>
+        Total de créditos:
+        <strong id="total-creditos">0</strong>
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <p>
+      &copy;
+      <span id="ano-atual"></span>
+      | Leandro Moura | Brasil
+    </p>
+
+    <p id="ultima-modificacao"></p>
+
+  </footer>
+
+</body>
+
+</html>

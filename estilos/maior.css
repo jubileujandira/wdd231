@@ -1,0 +1,38 @@
+@media only screen and (min-width: 700px) {
+
+  .hamburger {
+    display: none;
+  }
+
+  .navegacao {
+    display: block;
+  }
+
+  .navegacao ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navegacao li {
+    flex: 1;
+    max-width: 220px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 18px;
+  }
+
+  main h1 {
+    grid-column: 1 / 3;
+  }
+
+  .certificado {
+    grid-column: 1 / 3;
+  }
+
+  #lista-cursos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
