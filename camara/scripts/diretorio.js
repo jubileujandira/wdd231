@@ -70,29 +70,22 @@ function exibirMembros(membros) {
   });
 }
 
-/* VISUALIZAÇÃO EM GRADE */
+/* ALTERNAR PARA VISUALIZAÇÃO EM GRADE */
+
 botaoGrade.addEventListener('click', () => {
-  membrosContainer.className = 'grade';
-
-  const imagens = membrosContainer.querySelectorAll('img');
-
-  imagens.forEach((imagem) => {
-    imagem.style.display = 'block';
-  });
+  membrosContainer.classList.add('grade');
+  membrosContainer.classList.remove('lista');
 });
 
-/* VISUALIZAÇÃO EM LISTA */
+/* ALTERNAR PARA VISUALIZAÇÃO EM LISTA */
+
 botaoLista.addEventListener('click', () => {
-  membrosContainer.className = 'lista';
-
-  const imagens = membrosContainer.querySelectorAll('img');
-
-  imagens.forEach((imagem) => {
-    imagem.style.display = 'none';
-  });
+  membrosContainer.classList.add('lista');
+  membrosContainer.classList.remove('grade');
 });
 
 /* MENU MOBILE */
+
 botaoMenu.addEventListener('click', () => {
   const aberto = navegacao.classList.toggle('aberto');
 
@@ -100,10 +93,13 @@ botaoMenu.addEventListener('click', () => {
 });
 
 /* RODAPÉ */
+
 const anoAtual = document.querySelector('#anoAtual');
 const ultimaModificacao = document.querySelector('#ultimaModificacao');
 
 anoAtual.textContent = new Date().getFullYear();
 ultimaModificacao.textContent = document.lastModified;
+
+/* CARREGAR OS MEMBROS */
 
 obterMembros();

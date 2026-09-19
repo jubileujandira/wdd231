@@ -107,7 +107,17 @@ main h1 {
   margin-bottom: 0.7rem;
 }
 
-/* Na visualização em lista, as imagens não são exibidas */
+/* IMAGENS APARECEM NA GRADE */
+
+#membros.grade img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1rem;
+}
+
+/* IMAGENS NÃO APARECEM NA LISTA */
+
 #membros.lista img {
   display: none;
 }
@@ -117,13 +127,6 @@ main h1 {
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 1rem;
-}
-
-#membros img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto 1rem;
 }
 
 #membros h3 {
