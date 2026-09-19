@@ -14,9 +14,15 @@
     min-width: 120px;
   }
 
+  /* VISUALIZAÇÃO EM GRADE */
+
   #membros.grade {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
+
+  /* VISUALIZAÇÃO EM LISTA */
 
   #membros.lista {
     display: block;
@@ -26,16 +32,9 @@
     margin-bottom: 0.7rem;
   }
 
+  /* Na lista as imagens não devem aparecer */
   #membros.lista img {
-    width: 120px;
-    height: auto;
-    margin: 0 1rem 0 0;
-    float: left;
-  }
-
-  #membros.lista section {
-    min-height: 150px;
-    overflow: auto;
+    display: none;
   }
 
   footer {
@@ -43,4 +42,5 @@
     justify-content: space-around;
     text-align: left;
   }
+
 }
