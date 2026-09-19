@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Diretório da Câmara de Comércio de Recife com informações sobre empresas e membros da comunidade.">
+
+  <meta name="author" content="José Leandro da Silva Moura">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Diretório | Câmara de Comércio de Recife">
+  <meta
+    property="og:description"
+    content="Conheça as empresas participantes da Câmara de Comércio de Recife.">
+  <meta property="og:type" content="website">
+  <meta
+    property="og:url"
+    content="https://jubileujandira.github.io/wdd231/camara/diretorio.html">
+  <meta
+    property="og:image"
+    content="https://jubileujandira.github.io/wdd231/camara/imagens/recife-tecnologia.jpeg">
+
+  <title>Diretório | Câmara de Comércio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/telas-pequenas.css">
+  <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/diretorio.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="cabecalho">
+      <div>
+        <h1>Câmara de Comércio</h1>
+        <p>Recife - Pernambuco</p>
+      </div>
+
+      <button
+        id="menu"
+        type="button"
+        aria-label="Abrir menu de navegação"
+        aria-controls="navegacao"
+        aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <nav id="navegacao">
+      <a href="index.html">Início</a>
+      <a href="diretorio.html" class="ativo">Diretório</a>
+      <a href="junte-se.html">Junte-se</a>
+      <a href="descobrir.html">Descobrir</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Diretório de Empresas</h2>
+
+    <div class="visualizacao">
+      <button id="grade" type="button">Grade</button>
+      <button id="lista" type="button">Lista</button>
+    </div>
+
+    <div id="membros" class="grade"></div>
+  </main>
+
+  <footer>
+    <div>
+      <p><strong>Câmara de Comércio de Recife</strong></p>
+      <p>Recife - Pernambuco, Brasil</p>
+      <p>contato@camararecife.com.br</p>
+      <p>(81) 3333-0000</p>
+    </div>
+
+    <div>
+      <p>
+        © <span id="anoAtual"></span>
+        Câmara de Comércio
+      </p>
+
+      <p>José Leandro da Silva Moura | WDD 231</p>
+
+      <p>
+        Última modificação:
+        <span id="ultimaModificacao"></span>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

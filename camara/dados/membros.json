@@ -1,0 +1,58 @@
+[
+  {
+    "nome": "Recife Tecnologia",
+    "endereco": "Av. Boa Viagem, 1200 - Recife, PE",
+    "telefone": "(81) 3333-1001",
+    "website": "https://example.com",
+    "imagem": "recife-tecnologia.jpeg",
+    "nivel": 3
+  },
+  {
+    "nome": "Piedade Contabilidade",
+    "endereco": "Av. Bernardo Vieira de Melo, 850 - Jaboatão dos Guararapes, PE",
+    "telefone": "(81) 3333-1002",
+    "website": "https://example.com",
+    "imagem": "piedade-contabilidade.jpeg",
+    "nivel": 2
+  },
+  {
+    "nome": "Nordeste Turismo",
+    "endereco": "Rua do Sol, 210 - Recife, PE",
+    "telefone": "(81) 3333-1003",
+    "website": "https://example.com",
+    "imagem": "nordeste-turismo.jpeg",
+    "nivel": 1
+  },
+  {
+    "nome": "Pernambuco Engenharia",
+    "endereco": "Av. Agamenon Magalhães, 1500 - Recife, PE",
+    "telefone": "(81) 3333-1004",
+    "website": "https://example.com",
+    "imagem": "pernambuco-engenharia.jpeg",
+    "nivel": 3
+  },
+  {
+    "nome": "Recife Digital",
+    "endereco": "Rua da Aurora, 500 - Recife, PE",
+    "telefone": "(81) 3333-1005",
+    "website": "https://example.com",
+    "imagem": "recife-digital.jpeg",
+    "nivel": 2
+  },
+  {
+    "nome": "Boa Viagem Serviços",
+    "endereco": "Rua dos Navegantes, 320 - Recife, PE",
+    "telefone": "(81) 3333-1006",
+    "website": "https://example.com",
+    "imagem": "boa-viagem-servicos.jpeg",
+    "nivel": 1
+  },
+  {
+    "nome": "Comércio Pernambuco",
+    "endereco": "Av. Conde da Boa Vista, 700 - Recife, PE",
+    "telefone": "(81) 3333-1007",
+    "website": "https://example.com",
+    "imagem": "comercio-pernambuco.jpeg",
+    "nivel": 2
+  }
+]
