@@ -70,22 +70,36 @@ function exibirMembros(membros) {
   });
 }
 
+/* VISUALIZAÇÃO EM GRADE */
 botaoGrade.addEventListener('click', () => {
-  membrosContainer.classList.add('grade');
-  membrosContainer.classList.remove('lista');
+  membrosContainer.className = 'grade';
+
+  const imagens = membrosContainer.querySelectorAll('img');
+
+  imagens.forEach((imagem) => {
+    imagem.style.display = 'block';
+  });
 });
 
+/* VISUALIZAÇÃO EM LISTA */
 botaoLista.addEventListener('click', () => {
-  membrosContainer.classList.add('lista');
-  membrosContainer.classList.remove('grade');
+  membrosContainer.className = 'lista';
+
+  const imagens = membrosContainer.querySelectorAll('img');
+
+  imagens.forEach((imagem) => {
+    imagem.style.display = 'none';
+  });
 });
 
+/* MENU MOBILE */
 botaoMenu.addEventListener('click', () => {
-  const menuAberto = navegacao.classList.toggle('aberto');
+  const aberto = navegacao.classList.toggle('aberto');
 
-  botaoMenu.setAttribute('aria-expanded', menuAberto);
+  botaoMenu.setAttribute('aria-expanded', aberto);
 });
 
+/* RODAPÉ */
 const anoAtual = document.querySelector('#anoAtual');
 const ultimaModificacao = document.querySelector('#ultimaModificacao');
 
