@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Página inicial da Câmara de Comércio de Recife com eventos, clima e empresas em destaque.">
+
+  <meta name="author" content="José Leandro da Silva Moura">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Início | Câmara de Comércio de Recife">
+  <meta
+    property="og:description"
+    content="Conheça a Câmara de Comércio de Recife, nossos eventos e empresas associadas.">
+  <meta
+    property="og:image"
+    content="https://jubileujandira.github.io/wdd231/camara/imagens/recife-tecnologia.jpeg">
+  <meta
+    property="og:url"
+    content="https://jubileujandira.github.io/wdd231/camara/">
+  <meta property="og:type" content="website">
+
+  <title>Início | Câmara de Comércio de Recife</title>
+
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/telas-pequenas.css">
+  <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+  <script src="scripts/inicio.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="cabecalho">
+      <div class="nome-site">
+        <span>Câmara de Comércio</span>
+        <p>Recife - Pernambuco</p>
+      </div>
+
+      <button
+        id="menu"
+        type="button"
+        aria-label="Abrir menu de navegação"
+        aria-controls="navegacao"
+        aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <nav id="navegacao">
+      <a href="index.html" class="ativo">Início</a>
+      <a href="diretorio.html">Diretório</a>
+      <a href="junte-se.html">Junte-se</a>
+      <a href="descobrir.html">Descobrir</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Câmara de Comércio de Recife</h1>
+
+    <!-- Imagem principal -->
+    <section class="hero">
+      <img
+        src="imagens/hero-recife.jpeg"
+        alt="Vista da cidade do Recife, Pernambuco"
+        width="1200"
+        height="600">
+
+      <div class="hero-conteudo">
+        <h2>Fortalecendo negócios em Recife</h2>
+        <p>
+          Conectamos empresas, empreendedores e a comunidade
+          para promover o desenvolvimento econômico local.
+        </p>
+
+        <a href="junte-se.html" class="cta">Junte-se à Câmara</a>
+      </div>
+    </section>
+
+    <!-- Informações principais -->
+    <section class="informacoes">
+
+      <div class="eventos">
+        <h2>Eventos</h2>
+
+        <h3>Encontro Empresarial Recife 2026</h3>
+        <p>
+          Participe de um encontro entre empresários e
+          empreendedores da região.
+        </p>
+        <p><strong>Data:</strong> 15 de outubro de 2026</p>
+        <p><strong>Local:</strong> Recife - Pernambuco</p>
+      </div>
+
+      <div class="clima">
+        <h2>Clima em Recife</h2>
+
+        <div id="tempo-atual">
+          <p>Carregando informações do tempo...</p>
+        </div>
+      </div>
+
+      <div class="previsao">
+        <h2>Previsão do Tempo</h2>
+
+        <div id="previsao-tempo">
+          <p>Carregando previsão...</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Empresas em destaque -->
+    <section class="destaques">
+      <h2>Empresas em Destaque</h2>
+
+      <div id="empresas-destaque">
+        <p>Carregando empresas...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      <p><strong>Câmara de Comércio de Recife</strong></p>
+      <p>Recife - Pernambuco, Brasil</p>
+      <p>contato@camararecife.com.br</p>
+      <p>(81) 3333-0000</p>
+    </div>
+
+    <div>
+      <p>
+        © <span id="anoAtual"></span>
+        Câmara de Comércio
+      </p>
+
+      <p>José Leandro da Silva Moura | WDD 231</p>
+
+      <p>
+        Última modificação:
+        <span id="ultimaModificacao"></span>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
