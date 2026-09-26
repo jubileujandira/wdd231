@@ -29,6 +29,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
@@ -44,6 +45,7 @@
 
   <header>
     <div class="cabecalho">
+
       <div class="nome-site">
         <span>Câmara de Comércio</span>
         <p>Recife - Pernambuco</p>
@@ -57,6 +59,7 @@
         aria-expanded="false">
         ☰
       </button>
+
     </div>
 
     <nav id="navegacao">
@@ -68,11 +71,13 @@
   </header>
 
   <main>
+
     <h1>Associe-se à Câmara</h1>
 
     <div class="conteudo-associacao">
 
       <section class="area-formulario">
+
         <h2>Formulário de Associação</h2>
 
         <form method="get" action="agradecimento.html">
@@ -138,18 +143,19 @@
               required>
           </label>
 
-          <label for="nivel-associacao">Nível de associação</label>
-          <select
-            id="nivel-associacao"
-            name="nivel-associacao"
-            title="Selecione um nível de associação"
-            required>
-            <option value="" disabled selected>Selecione uma opção</option>
-            <option value="np">Associação NP</option>
-            <option value="bronze">Associação Bronze</option>
-            <option value="silver">Associação Prata</option>
-            <option value="gold">Associação Ouro</option>
-          </select>
+          <label>
+            Nível de associação
+            <select
+              name="nivel"
+              title="Selecione um nível de associação"
+              required>
+              <option value="">Selecione uma opção</option>
+              <option value="np">Associação NP</option>
+              <option value="bronze">Associação Bronze</option>
+              <option value="silver">Associação Prata</option>
+              <option value="gold">Associação Ouro</option>
+            </select>
+          </label>
 
           <label>
             Descrição da organização
@@ -164,18 +170,25 @@
             name="timestamp"
             id="timestamp">
 
-          <button type="submit">Enviar solicitação</button>
+          <button type="submit">
+            Enviar solicitação
+          </button>
 
         </form>
+
       </section>
 
       <section class="niveis-associacao">
+
         <h2>Níveis de Associação</h2>
 
         <div class="cartao-nivel">
           <h3>Associação NP</h3>
           <p>Para organizações sem fins lucrativos.</p>
-          <button type="button" data-modal="modal-np">
+
+          <button
+            type="button"
+            data-modal="modal-np">
             Mais informações
           </button>
         </div>
@@ -183,7 +196,10 @@
         <div class="cartao-nivel">
           <h3>Associação Bronze</h3>
           <p>Benefícios básicos para sua organização.</p>
-          <button type="button" data-modal="modal-bronze">
+
+          <button
+            type="button"
+            data-modal="modal-bronze">
             Mais informações
           </button>
         </div>
@@ -191,7 +207,10 @@
         <div class="cartao-nivel">
           <h3>Associação Prata</h3>
           <p>Mais divulgação e benefícios exclusivos.</p>
-          <button type="button" data-modal="modal-prata">
+
+          <button
+            type="button"
+            data-modal="modal-prata">
             Mais informações
           </button>
         </div>
@@ -199,72 +218,137 @@
         <div class="cartao-nivel">
           <h3>Associação Ouro</h3>
           <p>Nosso nível com mais benefícios.</p>
-          <button type="button" data-modal="modal-ouro">
+
+          <button
+            type="button"
+            data-modal="modal-ouro">
             Mais informações
           </button>
         </div>
+
       </section>
 
     </div>
 
     <dialog id="modal-np">
+
       <h2>Associação NP</h2>
-      <p>Indicada para organizações sem fins lucrativos.</p>
-      <p>Não possui taxa de associação.</p>
-      <p>Inclui participação em eventos e acesso a informações da Câmara.</p>
-      <button type="button" class="fechar-modal">Fechar</button>
+
+      <p>
+        Indicada para organizações sem fins lucrativos.
+      </p>
+
+      <p>
+        Não possui taxa de associação.
+      </p>
+
+      <p>
+        Inclui participação em eventos e acesso a informações
+        da Câmara.
+      </p>
+
+      <button
+        type="button"
+        class="fechar-modal">
+        Fechar
+      </button>
+
     </dialog>
 
     <dialog id="modal-bronze">
+
       <h2>Associação Bronze</h2>
-      <p>Inclui participação em eventos da Câmara.</p>
-      <p>Acesso a treinamentos e oportunidades de networking.</p>
-      <button type="button" class="fechar-modal">Fechar</button>
+
+      <p>
+        Inclui participação em eventos da Câmara.
+      </p>
+
+      <p>
+        Acesso a treinamentos e oportunidades de networking.
+      </p>
+
+      <button
+        type="button"
+        class="fechar-modal">
+        Fechar
+      </button>
+
     </dialog>
 
     <dialog id="modal-prata">
+
       <h2>Associação Prata</h2>
-      <p>Inclui todos os benefícios do nível Bronze.</p>
+
+      <p>
+        Inclui todos os benefícios do nível Bronze.
+      </p>
+
       <p>
         Oferece descontos em eventos e oportunidades adicionais
         de divulgação.
       </p>
-      <button type="button" class="fechar-modal">Fechar</button>
+
+      <button
+        type="button"
+        class="fechar-modal">
+        Fechar
+      </button>
+
     </dialog>
 
     <dialog id="modal-ouro">
+
       <h2>Associação Ouro</h2>
-      <p>Inclui todos os benefícios dos níveis anteriores.</p>
+
+      <p>
+        Inclui todos os benefícios dos níveis anteriores.
+      </p>
+
       <p>
         Oferece maior destaque publicitário e participação
         em eventos especiais.
       </p>
-      <button type="button" class="fechar-modal">Fechar</button>
+
+      <button
+        type="button"
+        class="fechar-modal">
+        Fechar
+      </button>
+
     </dialog>
 
   </main>
 
   <footer>
+
     <div>
-      <p><strong>Câmara de Comércio de Recife</strong></p>
+      <p>
+        <strong>Câmara de Comércio de Recife</strong>
+      </p>
+
       <p>Recife - Pernambuco, Brasil</p>
       <p>contato@camararecife.com.br</p>
       <p>(81) 3333-0000</p>
     </div>
 
     <div>
+
       <p>
         © <span id="anoAtual"></span>
         Câmara de Comércio
       </p>
 
-      <p>José Leandro da Silva Moura | WDD 231</p>
+      <p>
+        José Leandro da Silva Moura | WDD 231
+      </p>
 
       <p>
         Última modificação:
         <span id="ultimaModificacao"></span>
       </p>
+
     </div>
+
   </footer>
 
 </body>
