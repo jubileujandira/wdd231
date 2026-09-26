@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -139,19 +138,18 @@
               required>
           </label>
 
-          <label>
-            Nível de associação
-            <select
-              name="nivel"
-              title="Selecione um nível de associação"
-              required>
-              <option value="">Selecione uma opção</option>
-              <option value="np">Associação NP</option>
-              <option value="bronze">Associação Bronze</option>
-              <option value="silver">Associação Prata</option>
-              <option value="gold">Associação Ouro</option>
-            </select>
-          </label>
+          <label for="nivel-associacao">Nível de associação</label>
+          <select
+            id="nivel-associacao"
+            name="nivel-associacao"
+            title="Selecione um nível de associação"
+            required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="np">Associação NP</option>
+            <option value="bronze">Associação Bronze</option>
+            <option value="silver">Associação Prata</option>
+            <option value="gold">Associação Ouro</option>
+          </select>
 
           <label>
             Descrição da organização
@@ -161,7 +159,10 @@
               rows="5"></textarea>
           </label>
 
-          <input type="hidden" name="timestamp" id="timestamp">
+          <input
+            type="hidden"
+            name="timestamp"
+            id="timestamp">
 
           <button type="submit">Enviar solicitação</button>
 
@@ -224,14 +225,20 @@
     <dialog id="modal-prata">
       <h2>Associação Prata</h2>
       <p>Inclui todos os benefícios do nível Bronze.</p>
-      <p>Oferece descontos em eventos e oportunidades adicionais de divulgação.</p>
+      <p>
+        Oferece descontos em eventos e oportunidades adicionais
+        de divulgação.
+      </p>
       <button type="button" class="fechar-modal">Fechar</button>
     </dialog>
 
     <dialog id="modal-ouro">
       <h2>Associação Ouro</h2>
       <p>Inclui todos os benefícios dos níveis anteriores.</p>
-      <p>Oferece maior destaque publicitário e participação em eventos especiais.</p>
+      <p>
+        Oferece maior destaque publicitário e participação
+        em eventos especiais.
+      </p>
       <button type="button" class="fechar-modal">Fechar</button>
     </dialog>
 
@@ -263,4 +270,3 @@
 </body>
 
 </html>
-```
