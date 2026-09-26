@@ -7,30 +7,17 @@
 
   <meta
     name="description"
-    content="Diretório da Câmara de Comércio de Recife com informações sobre empresas e membros da comunidade.">
+    content="Confirmação da solicitação de associação à Câmara de Comércio de Recife.">
 
   <meta name="author" content="José Leandro da Silva Moura">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Diretório | Câmara de Comércio de Recife">
-  <meta
-    property="og:description"
-    content="Conheça as empresas participantes da Câmara de Comércio de Recife.">
-  <meta
-    property="og:image"
-    content="https://jubileujandira.github.io/wdd231/camara/imagens/recife-tecnologia.jpeg">
-  <meta
-    property="og:url"
-    content="https://jubileujandira.github.io/wdd231/camara/diretorio.html">
-  <meta property="og:type" content="website">
-
-  <title>Diretório | Câmara de Comércio</title>
+  <title>Obrigado | Câmara de Comércio</title>
 
   <link rel="icon" href="favicon.ico">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
@@ -39,7 +26,7 @@
   <link rel="stylesheet" href="estilos/telas-pequenas.css">
   <link rel="stylesheet" href="estilos/telas-grandes.css">
 
-  <script src="scripts/diretorio.js" defer></script>
+  <script src="scripts/agradecimento.js" defer></script>
 </head>
 
 <body>
@@ -63,21 +50,28 @@
 
     <nav id="navegacao">
       <a href="index.html">Início</a>
-      <a href="diretorio.html" class="ativo">Diretório</a>
+      <a href="diretorio.html">Diretório</a>
       <a href="associacao.html">Junte-se</a>
       <a href="descobrir.html">Descobrir</a>
     </nav>
   </header>
 
   <main>
-    <h1>Diretório de Empresas</h1>
+    <section class="agradecimento">
+      <h1>Obrigado por se associar!</h1>
 
-    <div class="visualizacao">
-      <button id="grade" type="button">Grade</button>
-      <button id="lista" type="button">Lista</button>
-    </div>
+      <p>
+        Recebemos sua solicitação de associação à Câmara de Comércio de Recife.
+      </p>
 
-    <div id="membros" class="grade"></div>
+      <h2>Informações enviadas</h2>
+
+      <div id="dados-enviados"></div>
+
+      <a href="index.html" class="voltar-inicio">
+        Voltar para a página inicial
+      </a>
+    </section>
   </main>
 
   <footer>
