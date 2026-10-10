@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Descubra oito lugares de interesse em Recife, sua cultura, história e atrações turísticas.">
+
+  <meta name="author" content="José Leandro da Silva Moura">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Descobrir Recife | Câmara de Comércio">
+  <meta
+    property="og:description"
+    content="Conheça lugares históricos, culturais e turísticos da cidade do Recife.">
+  <meta
+    property="og:image"
+    content="https://jubileujandira.github.io/wdd231/camara/imagens/recife-tecnologia.jpeg">
+  <meta
+    property="og:url"
+    content="https://jubileujandira.github.io/wdd231/camara/sobre.html">
+  <meta property="og:type" content="website">
+
+  <title>Descobrir Recife | Câmara de Comércio</title>
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/telas-pequenas.css">
+  <link rel="stylesheet" href="estilos/telas-grandes.css">
+  <link rel="stylesheet" href="estilos/sobre.css">
+
+  <script type="module" src="scripts/sobre.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="cabecalho">
+      <div class="nome-site">
+        <span>Câmara de Comércio</span>
+        <p>Recife - Pernambuco</p>
+      </div>
+
+      <button
+        id="menu"
+        type="button"
+        aria-label="Abrir menu de navegação"
+        aria-controls="navegacao"
+        aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <nav id="navegacao">
+      <a href="index.html">Início</a>
+      <a href="diretorio.html">Diretório</a>
+      <a href="associacao.html">Junte-se</a>
+      <a href="sobre.html" class="ativo" aria-current="page">Descobrir</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Descubra Recife</h1>
+
+    <p class="introducao">
+      Recife é uma cidade rica em história, cultura e oportunidades.
+      Conheça alguns dos lugares que representam a identidade
+      e a diversidade da capital pernambucana.
+    </p>
+
+    <aside id="mensagem-visita" aria-live="polite">
+    </aside>
+
+    <section class="lugares" aria-labelledby="titulo-lugares">
+      <h2 id="titulo-lugares">Lugares para conhecer</h2>
+
+      <div id="cartoes-lugares" class="grade-lugares">
+        <!-- Os cartões serão criados pelo JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <p><strong>Câmara de Comércio de Recife</strong></p>
+      <p>Recife - Pernambuco, Brasil</p>
+      <p>contato@camararecife.com.br</p>
+      <p>(81) 3333-0000</p>
+    </div>
+
+    <div>
+      <p>
+        © <span id="anoAtual"></span>
+        Câmara de Comércio
+      </p>
+
+      <p>José Leandro da Silva Moura | WDD 231</p>
+
+      <p>
+        Última modificação:
+        <span id="ultimaModificacao"></span>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

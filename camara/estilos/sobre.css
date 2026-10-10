@@ -1,0 +1,155 @@
+
+/* S05 - Página Sobre a Câmara de Comércio */
+
+.introducao {
+  max-width: 900px;
+  margin: 1rem auto 2rem;
+  line-height: 1.6;
+}
+
+/* Mensagem sobre a última visita */
+#mensagem-visita {
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background-color: #e8f2fa;
+  color: #173b59;
+  border-left: 4px solid #17639b;
+  border-radius: 5px;
+}
+
+/* Área dos pontos turísticos */
+.lugares {
+  margin: 2rem 0;
+}
+
+.lugares > h2 {
+  margin-bottom: 1.5rem;
+}
+
+.grade-lugares {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "lugar1"
+    "lugar2"
+    "lugar3"
+    "lugar4"
+    "lugar5"
+    "lugar6"
+    "lugar7"
+    "lugar8";
+}
+
+/* Cartões */
+.cartao-lugar {
+  min-width: 0;
+  overflow: hidden;
+  background-color: #fff;
+  color: #222;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cartao-lugar h2 {
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+  color: #173b59;
+}
+
+.cartao-lugar figure {
+  margin: 0;
+}
+
+.cartao-lugar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cartao-lugar address {
+  margin: 1rem 0;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.cartao-lugar p {
+  line-height: 1.6;
+}
+
+.cartao-lugar button {
+  padding: 0.7rem 1rem;
+  background-color: #174e78;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cartao-lugar button:focus-visible {
+  outline: 3px solid #f0a500;
+  outline-offset: 3px;
+}
+
+.detalhes-lugar {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #edf4fa;
+  color: #173b59;
+  border-radius: 5px;
+}
+
+.detalhes-lugar[hidden] {
+  display: none;
+}
+
+/* Telas médias: 641px até 1024px */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .grade-lugares {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "lugar1 lugar2"
+      "lugar3 lugar4"
+      "lugar5 lugar6"
+      "lugar7 lugar8";
+  }
+}
+
+/* Telas grandes: 1025px ou mais */
+@media (min-width: 1025px) {
+  .grade-lugares {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas:
+      "lugar1 lugar2 lugar3 lugar4"
+      "lugar5 lugar6 lugar7 lugar8";
+  }
+}
+
+/* Efeitos apenas para dispositivos com mouse */
+@media (hover: hover) and (pointer: fine) {
+  .cartao-lugar img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .cartao-lugar img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.08);
+  }
+
+  .cartao-lugar button:hover {
+    background-color: #103b5c;
+  }
+}
+
+/* Respeitar preferência por movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  .cartao-lugar img {
+    transition: none;
+  }
+}
