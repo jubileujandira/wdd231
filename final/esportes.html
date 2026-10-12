@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Conheça 15 modalidades esportivas, suas características e os principais mercados de apostas no iGaming.">
+
+    <meta name="author" content="José Leandro da Silva Moura">
+
+    <meta property="og:title"
+          content="Esportes | iGaming Insights Brasil">
+    <meta property="og:description"
+          content="Explore modalidades esportivas e seus mercados de apostas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url"
+          content="https://jubileujandira.github.io/wdd231/final/esportes.html">
+
+    <title>Esportes | iGaming Insights Brasil</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/esportes.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <h1>iGaming <span>Insights Brasil</span></h1>
+
+            <button id="menu-button"
+                    type="button"
+                    aria-label="Abrir menu de navegação"
+                    aria-expanded="false"
+                    aria-controls="main-nav">
+                ☰
+            </button>
+
+            <nav id="main-nav" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="esportes.html" aria-current="page">Esportes</a>
+                <a href="mercado.html">Mercado e Risco</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Modalidades esportivas</h2>
+
+            <p>
+                O sportsbook reúne diferentes modalidades
+                esportivas e mercados relacionados aos
+                resultados das competições.
+            </p>
+
+            <p>
+                Explore as modalidades abaixo para conhecer
+                suas características, quantidade de
+                participantes e principais mercados.
+            </p>
+        </section>
+
+        <section class="areas-section" aria-labelledby="titulo-modalidades">
+            <h2 id="titulo-modalidades">
+                Explore 15 modalidades esportivas
+            </h2>
+
+            <p class="section-description">
+                Informações educativas sobre os esportes
+                presentes no mercado de apostas.
+            </p>
+
+            <div class="sports-controls">
+                <label for="filtro-categoria">
+                    Filtrar por categoria:
+                </label>
+
+                <select id="filtro-categoria">
+                    <option value="todos">Todas</option>
+                    <option value="Coletivo">Coletivo</option>
+                    <option value="Individual">Individual</option>
+                    <option value="Individual ou duplas">
+                        Individual ou duplas
+                    </option>
+                </select>
+            </div>
+
+            <p id="resultado-contagem" aria-live="polite"></p>
+
+            <div id="lista-esportes"
+                 class="cards-container"
+                 aria-live="polite">
+                <p>Carregando modalidades esportivas...</p>
+            </div>
+        </section>
+
+        <dialog id="modal-esporte" aria-labelledby="modal-titulo">
+            <div class="modal-content">
+                <h2 id="modal-titulo"></h2>
+
+                <div id="modal-detalhes"></div>
+
+                <button id="fechar-modal" type="button">
+                    Fechar
+                </button>
+            </div>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | iGaming Insights Brasil</p>
+        <p>Desenvolvido por José Leandro da Silva Moura</p>
+        <p><a href="atribuicoes.html">Atribuições</a></p>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/esportes.js"></script>
+</body>
+</html>
+

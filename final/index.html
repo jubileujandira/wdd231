@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore o mercado de iGaming no Brasil, apostas esportivas, cassino online, tecnologia e gestão de risco.">
+    <meta name="author" content="José Leandro da Silva Moura">
+
+    <meta property="og:title" content="iGaming Insights Brasil">
+    <meta property="og:description" content="Informação, tecnologia e conhecimento sobre o mercado brasileiro de iGaming.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jubileujandira.github.io/wdd231/final/">
+
+    
+<title>Início | iGaming Insights Brasil</title>
+
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+<link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <h1>iGaming <span>Insights Brasil</span></h1>
+
+            <button
+                id="menu-button"
+                type="button"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+                aria-controls="main-nav">
+                ☰
+            </button>
+
+            <nav id="main-nav" aria-label="Navegação principal">
+                <a href="index.html" aria-current="page">Início</a>
+                <a href="esportes.html">Esportes</a>
+                <a href="mercado.html">Mercado e Risco</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="hero-label">
+                    TECNOLOGIA • MERCADO • INFORMAÇÃO
+                </p>
+
+                <h2>O universo do iGaming no Brasil</h2>
+
+                <p>
+                    Descubra como funcionam as apostas esportivas,
+                    os jogos de cassino online e a gestão de risco
+                    em um dos setores mais dinâmicos do entretenimento digital.
+                </p>
+
+                <a class="button-primary" href="#areas">
+                    Explorar conteúdos
+                </a>
+            </div>
+        </section>
+
+        <section class="intro">
+            <h2>Conhecimento sobre o mercado digital</h2>
+
+            <p>
+                O iGaming Insights Brasil é um portal educativo
+                dedicado à apresentação de conceitos, tecnologias
+                e práticas relacionadas ao mercado de apostas
+                e jogos online.
+            </p>
+
+            <p>
+                Nosso objetivo é tornar informações sobre
+                sportsbook, cassino, regulamentação e gestão
+                de risco mais acessíveis para quem deseja
+                compreender o funcionamento desse setor.
+            </p>
+        </section>
+
+        <section class="areas-section" id="areas">
+            <h2>Explore o mercado de iGaming</h2>
+
+            <p class="section-description">
+                Conheça três áreas fundamentais do setor.
+            </p>
+
+            <div class="cards-container">
+                <article class="info-card">
+                    <div class="card-icon" aria-hidden="true">⚽</div>
+                    <h3>Sportsbook</h3>
+
+                    <p>
+                        Entenda as modalidades esportivas,
+                        os mercados de apostas, as odds
+                        e os conceitos de probabilidade.
+                    </p>
+
+                    <a href="esportes.html">
+                        Explorar esportes →
+                    </a>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon" aria-hidden="true">♠</div>
+                    <h3>Cassino Online</h3>
+
+                    <p>
+                        Conheça o funcionamento dos jogos
+                        digitais e conceitos matemáticos
+                        como RTP, volatilidade e aleatoriedade.
+                    </p>
+
+                    <a href="mercado.html">
+                        Conhecer o mercado →
+                    </a>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon" aria-hidden="true">📊</div>
+                    <h3>Gestão de Risco</h3>
+
+                    <p>
+                        Descubra como a análise de dados,
+                        o monitoramento de operações e
+                        os indicadores contribuem para o setor.
+                    </p>
+
+                    <a href="mercado.html">
+                        Entender gestão de risco →
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="responsible-section">
+            <h2>Regulamentação e jogo responsável</h2>
+
+            <p>
+                O mercado brasileiro de apostas de quota fixa
+                possui regras relacionadas à autorização
+                das operadoras, à proteção dos consumidores
+                e à integridade das operações.
+            </p>
+
+            <p>
+                Apostar envolve riscos financeiros.
+                O jogo deve ser tratado como entretenimento,
+                nunca como uma fonte garantida de renda.
+            </p>
+
+            <a class="button-secondary" href="mercado.html">
+                Saiba mais sobre o mercado
+            </a>
+        </section>
+
+        <section class="intro" id="contato">
+            <h2>Interesse em conteúdos educativos</h2>
+
+            <p>
+                Quer conhecer mais sobre o mercado de iGaming?
+                Preencha o formulário abaixo e informe
+                qual assunto desperta seu interesse.
+            </p>
+
+            <form action="obrigado.html" method="get"
+                  class="interest-form">
+
+                <div class="form-group">
+                    <label for="nome">Nome completo</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        autocomplete="name"
+                        minlength="3"
+                        maxlength="80"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        maxlength="120"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="interesse">Área de interesse</label>
+                    <select id="interesse" name="interesse" required>
+                        <option value="" selected disabled>
+                            Selecione uma área
+                        </option>
+                        <option value="Sportsbook">
+                            Sportsbook
+                        </option>
+                        <option value="Cassino Online">
+                            Cassino Online
+                        </option>
+                        <option value="Gestão de Risco">
+                            Gestão de Risco
+                        </option>
+                        <option value="Regulamentação">
+                            Regulamentação
+                        </option>
+                        <option value="Tecnologia">
+                            Tecnologia
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">
+                        Mensagem (opcional)
+                    </label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="4"
+                        maxlength="500"
+                        placeholder="Conte qual assunto você gostaria de conhecer melhor."></textarea>
+                </div>
+
+                <button class="button-primary" type="submit">
+                    Enviar formulário
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | iGaming Insights Brasil</p>
+        <p>Desenvolvido por José Leandro da Silva Moura</p>
+        <p><a href="atribuicoes.html">Atribuições</a></p>
+        <p><a href="#contato">Formulário de interesse</a></p>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

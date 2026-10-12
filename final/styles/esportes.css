@@ -1,0 +1,122 @@
+/* iGaming Insights Brasil - Página de Esportes */
+
+.sports-controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0 15px;
+}
+
+.sports-controls label {
+    font-weight: bold;
+    color: #0b1f33;
+}
+
+.sports-controls select {
+    padding: 10px 14px;
+    border: 1px solid #8997a5;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #0b1f33;
+    font: inherit;
+    max-width: 100%;
+}
+
+#resultado-contagem {
+    margin: 15px 0 25px;
+    font-weight: bold;
+}
+
+#lista-esportes .info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+#lista-esportes .info-card h3 {
+    margin: 0 0 10px;
+}
+
+#lista-esportes .info-card p {
+    margin: 0;
+}
+
+#lista-esportes .button-secondary {
+    margin-top: auto;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#modal-esporte {
+    width: min(90%, 480px);
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 0;
+    border: none;
+    border-top: 5px solid #d4a72c;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #243447;
+    box-shadow: 0 15px 50px rgb(0 0 0 / 25%);
+}
+
+#modal-esporte::backdrop {
+    background-color: rgb(5 18 32 / 70%);
+}
+
+.modal-content {
+    padding: 30px;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: #0b1f33;
+}
+
+.modal-content p {
+    margin: 14px 0;
+}
+
+#fechar-modal {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0b1f33;
+    color: #ffffff;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#fechar-modal:hover {
+    background-color: #173d60;
+}
+
+#fechar-modal:focus-visible,
+.sports-controls select:focus-visible,
+#lista-esportes button:focus-visible {
+    outline: 3px solid #d4a72c;
+    outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+    .sports-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sports-controls select {
+        width: 100%;
+    }
+
+    .modal-content {
+        padding: 22px;
+    }
+}

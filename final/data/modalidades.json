@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "nome": "Futebol",
+    "categoria": "Coletivo",
+    "participantes": "11 jogadores por equipe",
+    "mercados": "Resultado, gols e escanteios"
+  },
+  {
+    "id": 2,
+    "nome": "Basquete",
+    "categoria": "Coletivo",
+    "participantes": "5 jogadores por equipe",
+    "mercados": "Vencedor, pontos e handicap"
+  },
+  {
+    "id": 3,
+    "nome": "Tênis",
+    "categoria": "Individual ou duplas",
+    "participantes": "2 ou 4 jogadores",
+    "mercados": "Vencedor, sets e games"
+  },
+  {
+    "id": 4,
+    "nome": "Vôlei",
+    "categoria": "Coletivo",
+    "participantes": "6 jogadores por equipe",
+    "mercados": "Vencedor, sets e pontos"
+  },
+  {
+    "id": 5,
+    "nome": "Handebol",
+    "categoria": "Coletivo",
+    "participantes": "7 jogadores por equipe",
+    "mercados": "Resultado, gols e handicap"
+  },
+  {
+    "id": 6,
+    "nome": "Futsal",
+    "categoria": "Coletivo",
+    "participantes": "5 jogadores por equipe",
+    "mercados": "Resultado, gols e totais"
+  },
+  {
+    "id": 7,
+    "nome": "Beisebol",
+    "categoria": "Coletivo",
+    "participantes": "9 jogadores por equipe",
+    "mercados": "Vencedor, corridas e handicap"
+  },
+  {
+    "id": 8,
+    "nome": "Futebol Americano",
+    "categoria": "Coletivo",
+    "participantes": "11 jogadores por equipe",
+    "mercados": "Vencedor, pontos e handicap"
+  },
+  {
+    "id": 9,
+    "nome": "Hóquei no Gelo",
+    "categoria": "Coletivo",
+    "participantes": "6 jogadores por equipe no gelo",
+    "mercados": "Vencedor, gols e períodos"
+  },
+  {
+    "id": 10,
+    "nome": "MMA",
+    "categoria": "Individual",
+    "participantes": "2 lutadores",
+    "mercados": "Vencedor, rounds e método de vitória"
+  },
+  {
+    "id": 11,
+    "nome": "Boxe",
+    "categoria": "Individual",
+    "participantes": "2 lutadores",
+    "mercados": "Vencedor, rounds e decisão"
+  },
+  {
+    "id": 12,
+    "nome": "Tênis de Mesa",
+    "categoria": "Individual ou duplas",
+    "participantes": "2 ou 4 jogadores",
+    "mercados": "Vencedor, sets e pontos"
+  },
+  {
+    "id": 13,
+    "nome": "Badminton",
+    "categoria": "Individual ou duplas",
+    "participantes": "2 ou 4 jogadores",
+    "mercados": "Vencedor, games e pontos"
+  },
+  {
+    "id": 14,
+    "nome": "Críquete",
+    "categoria": "Coletivo",
+    "participantes": "11 jogadores por equipe",
+    "mercados": "Vencedor, corridas e wickets"
+  },
+  {
+    "id": 15,
+    "nome": "Rugby",
+    "categoria": "Coletivo",
+    "participantes": "15 jogadores por equipe no rugby union",
+    "mercados": "Vencedor, pontos e handicap"
+  }
+]
